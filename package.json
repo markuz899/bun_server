@@ -1,0 +1,25 @@
+{
+  "name": "node_fast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build && echo 'Clean build.'",
+    "dev": "bun --watch index.ts",
+    "build": "npm run clean && bun build ./index.js --outdir ./build --minify",
+    "prod": "bun run ./build/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "fastify": "^4.25.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.13"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

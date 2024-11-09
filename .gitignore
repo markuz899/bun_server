@@ -1,0 +1,10 @@
+# BUILD
+./build
+build/
+
+# MODULES
+./node_modules
+node_modules/
+
+# PACKAGE
+package-lock.json
